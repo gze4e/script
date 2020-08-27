@@ -12,12 +12,17 @@ Filebrowser.sh
 bash <(curl -L -s https://raw.githubusercontent.com/gze4e/script/master/Filebrowser.sh)
 ```
 
+
+
 修改配置
 配置文件在：/etc/filebrowser/filebrowser.json
 
 
+
 Nginx 代理设置
 ip http
+
+
 server {
         listen       80;
         listen       [::]:80;
@@ -29,18 +34,11 @@ server {
                 proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
         }
     }
-1
-2
-3
-4
-5
-6
-7
-8
-9
-10
-11
+
+
 域名 http
+
+
 server {
         listen       80;
         listen       [::]:80;
@@ -54,20 +52,10 @@ server {
         # 如果需要全局使用https，请启用下面的配置
         #  return 301 https://file.datablog.top$request_uri;
     }
-1
-2
-3
-4
-5
-6
-7
-8
-9
-10
-11
-12
-13
+
+
 域名 https
+
 server {
         listen       443 ssl http2;
         listen       [::]:443 ssl http2;
@@ -88,37 +76,15 @@ server {
                 proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
         }
     }
-1
-2
-3
-4
-5
-6
-7
-8
-9
-10
-11
-12
-13
-14
-15
-16
-17
-18
-19
-20
+
+
 服务管理命令
 状态：systemctl status filebrowser
 启动：systemctl start filebrowser
 停止：systemctl stop filebrowser
 重启：systemctl restart filebrowser
 开机启动：systemctl enable filebrowser
-1
-2
-3
-4
-5
+
 重置密码
 忘记密码后直接删除Filebrowser 的数据库，然后重启 Filebrowser 即可,然后用户名跟密码又是 admin。
 
