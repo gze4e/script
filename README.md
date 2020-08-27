@@ -9,7 +9,7 @@ Filebrowser.sh
 
 ### 下载安装:
 ``` bash
-bash <(curl -L -s https://raw.githubusercontent.com/vinewx/script/master/Filebrowser.sh)
+bash <(curl -L -s https://raw.githubusercontent.com/gze4e/script/master/Filebrowser.sh)
 ```
 
 gocc.sh
@@ -21,7 +21,7 @@ gocc.sh
 
 ### 下载安装:
 ``` bash
-wget --no-check-certificate --no-cache https://raw.githubusercontent.com/vinewx/script/master/gocc.sh
+wget --no-check-certificate --no-cache https://raw.githubusercontent.com/gze4e/script/master/gocc.sh
 chmod +x gocc.sh
 sudo ./gocc.sh
 ```
