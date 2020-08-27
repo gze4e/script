@@ -23,7 +23,7 @@ Nginx 代理设置
 https://blog.csdn.net/yimagudao/article/details/89461523
 
 
-服务管理命令
+服务管理命令 
 状态：systemctl status filebrowser
 启动：systemctl start filebrowser
 停止：systemctl stop filebrowser
