@@ -38,7 +38,6 @@ server {
 
 域名 http
 
-
 server {
         listen       80;
         listen       [::]:80;
@@ -51,7 +50,6 @@ server {
         }
         # 如果需要全局使用https，请启用下面的配置
         #  return 301 https://file.datablog.top$request_uri;
-    }
 
 
 域名 https
