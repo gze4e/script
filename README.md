@@ -20,60 +20,7 @@ bash <(curl -L -s https://raw.githubusercontent.com/gze4e/script/master/Filebrow
 
 
 Nginx 代理设置
-ip http
-
-
-server {
-        listen       80;
-        listen       [::]:80;
-        server_name  _;  #没有域名
-        location / {
-                proxy_pass http://localhost:9184;  #File Browser服务部署的地址
-                proxy_set_header Host $host;
-                proxy_set_header X-Real-IP $remote_addr;
-                proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
-        }
-    }
-
-
-域名 http
-
-server {
-        listen       80;
-        listen       [::]:80;
-        server_name  file.datablog.top;  #填写服务的域名即可
-        location / {
-                proxy_pass http://localhost:9184;  #File Browser服务部署的地址
-                proxy_set_header Host $host;
-                proxy_set_header X-Real-IP $remote_addr;
-                proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
-        }
-        # 如果需要全局使用https，请启用下面的配置
-        #  return 301 https://file.datablog.top$request_uri;
-
-
-域名 https
-
-server {
-        listen       443 ssl http2;
-        listen       [::]:443 ssl http2;
-        server_name  file.datablog.top; #使用的域名
-
-        ssl_certificate "file.pem"; # ssl的公钥地址 
-        ssl_certificate_key "file.key"; # ssl的私钥地址
-        ssl_session_cache shared:SSL:1m;
-        ssl_session_timeout  10m;
-        ssl_ciphers ECDHE-RSA-AES128-GCM-SHA256:ECDHE:ECDH:AES:HIGH:!NULL:!aNULL:!MD5:!ADH:!RC4;
-        ssl_protocols TLSv1 TLSv1.1 TLSv1.2;
-        ssl_prefer_server_ciphers on;
-
-        location / {
-                proxy_pass http://localhost:9184; #代理的服务地址
-                proxy_set_header Host $host;
-                proxy_set_header X-Real-IP $remote_addr;
-                proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
-        }
-    }
+https://blog.csdn.net/yimagudao/article/details/89461523
 
 
 服务管理命令
