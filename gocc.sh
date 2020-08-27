@@ -3,8 +3,8 @@
 #       System Required: Linux/Unix
 #       Description: GoCC Install
 #       Version: 1.0.1
-#       Author: vinew
-#       Blog: https://vinew.cc/
+#       Author: gze4e
+#       Blog: https:/gze4e.com/
 #============================================
 file="/usr/local/share/gocc"
 gocc_bin="/usr/bin/gocc"
@@ -29,14 +29,14 @@ Download_gocc(){
         echo -e "${Error_font_prefix}[错误]${Font_suffix} 不支持 ${bit} !" && exit 1
     fi
 
-    ver=$(curl -s https://api.github.com/repos/vinewx/gocc/releases/latest | grep 'tag_name' | cut -d\" -f4)
-    gocc_download_link="https://github.com/vinewx/gocc/releases/download/$ver/$gocc"
+    ver=$(curl -s https://api.github.com/repos/gze4e/gocc/releases/latest | grep 'tag_name' | cut -d\" -f4)
+    gocc_download_link="https://github.com/gze4e/gocc/releases/download/$ver/$gocc"
     
     if ! wget --no-check-certificate --no-cache -O "/tmp/gocc.tar.gz" $gocc_download_link; then
         echo -e "${Error_font_prefix}[错误]${Font_suffix} gocc 下载失败 !" && exit 1
     fi
 
-    if ! wget --no-check-certificate --no-cache -O "/tmp/gocc.zip" https://github.com/vinewx/gocc/archive/master.zip; then
+    if ! wget --no-check-certificate --no-cache -O "/tmp/gocc.zip" https://github.com/gze4e/gocc/archive/master.zip; then
         echo -e "${Error_font_prefix}[错误]${Font_suffix} gocc配置文件 下载失败 !" && exit 1
     fi
 
@@ -55,9 +55,9 @@ install_gocc(){
         echo
         echo -e "${Info_font_prefix}........... GoCC 一键脚本 ...........${Font_suffix}"
         echo
-        echo -e "${Info_font_prefix}[Author]${Font_suffix}: vinewx"
+        echo -e "${Info_font_prefix}[Author]${Font_suffix}: gze4e"
         echo
-        echo -e "${Info_font_prefix}[github]${Font_suffix}: https://github.com/vinewx/script"
+        echo -e "${Info_font_prefix}[github]${Font_suffix}: https://github.com/gze4e/script"
         echo
         echo " 1. 确定"
         echo
@@ -86,9 +86,9 @@ uninstall_gocc(){
     echo
     echo -e "${Info_font_prefix}........... GoCC 一键脚本 ...........${Font_suffix}"
     echo
-    echo -e "${Info_font_prefix}[Author]${Font_suffix}: vinewx"
+    echo -e "${Info_font_prefix}[Author]${Font_suffix}: gze4e"
     echo
-    echo -e "${Info_font_prefix}[github]${Font_suffix}: https://github.com/vinewx/script"
+    echo -e "${Info_font_prefix}[github]${Font_suffix}: https://github.com/gze4e/script"
     echo
     echo " 1. 确定"
     echo
@@ -113,9 +113,9 @@ while :; do
     echo
     echo -e "${Info_font_prefix}........... GoCC 一键脚本 ...........${Font_suffix}"
     echo
-    echo -e "${Info_font_prefix}[Author]${Font_suffix}: vinewx"
+    echo -e "${Info_font_prefix}[Author]${Font_suffix}: gze4e"
     echo
-    echo -e "${Info_font_prefix}[github]${Font_suffix}: https://github.com/vinewx/script"
+    echo -e "${Info_font_prefix}[github]${Font_suffix}: https://github.com/gze4e/script"
     echo
     echo " 1. 安装"
     echo
