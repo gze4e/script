@@ -193,9 +193,9 @@ while :; do
     echo
 	echo -e "${Info_font_prefix}........... Filebrowser 一键脚本 ...........${Font_suffix}"
 	echo
-	echo -e "${Info_font_prefix}[Author]${Font_suffix}: vinewx"
+	echo -e "${Info_font_prefix}[Author]${Font_suffix}: gze4e"
 	echo
-	echo -e "${Info_font_prefix}[github]${Font_suffix}: https://github.com/vinewx/script"
+	echo -e "${Info_font_prefix}[github]${Font_suffix}: https://github.com/gze4e/script"
 	echo
 	echo " 1. 安装"
 	echo
