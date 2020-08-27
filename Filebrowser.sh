@@ -5,8 +5,8 @@ export PATH
 #       System Required: CentOS/Debian/Ubuntu
 #       Description: Filebrowser Install
 #       Version: 2.0.0
-#       Author: vinew
-#       Blog: https://vinew.cc/
+#       Author: gze4e
+#       Blog: https://gze4e.com/
 #=================================================
 file="/etc/filebrowser/"
 filebrowser_bin="/etc/filebrowser/filebrowser"
